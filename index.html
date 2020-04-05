@@ -1,0 +1,506 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link href="/css/style450.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='/js/popupWindow.js'></script>
+    <script type="text/javascript" src="/js/prototype.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <title>Word Search Puzzle</title>
+</head>
+
+<body bgcolor="" #FFFFFF"">
+
+    <!-- begin header -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5K63XFH');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="initial-scale=1">
+    <!--touch friendly homescreen icons-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png" />
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png" />
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <script type="text/javascript" language="javascript"
+        src="https://static.discoveryeducation.com/www/js/swfobject.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/view.css" />
+    <style type="text/css">
+        #shell-top-links a,
+        div.fBot a {
+            font-weight: normal;
+        }
+
+        #footerDECopyrightMsg {
+            display: block;
+        }
+
+        #footerDE3MCopyrightMsg {
+            display: none;
+        }
+
+        #shareAndBookmarkLinks {
+            position: absolute;
+            top: 42px;
+            left: 50px;
+            z-index: 999;
+        }
+
+        #searchBox {
+            position: absolute;
+            top: 94px;
+            width: 370px;
+            overflow: hidden;
+            right: 5px;
+            z-index: 0;
+        }
+
+        .banner-top {
+            margin: auto 0;
+        }
+
+        #twitter-link {
+            border: none;
+            float: right;
+            padding-right: 10px;
+            display: none;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #de-header,
+        #footer-default {
+            font-size: 11px;
+            color: #323232;
+            font-family: Arial, Verdana, sans-serif, "Lucida Grande", "Lucida Sans Unicode";
+            line-height: 1;
+        }
+
+        html,
+        body {
+            height: auto !important;
+            height: 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 11px;
+            color: #323232;
+            font-family: Tahoma, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        object {
+            outline: none;
+        }
+
+        #globalBase {
+            width: 100%;
+            height: 100%;
+        }
+
+        #globalStage {
+            width: 990px;
+        }
+
+        #bCrumbs {
+            margin: 0 0 6px 2px;
+            color: #d0d0d0;
+            font-size: 10px;
+        }
+
+        #bCrumbs a {
+            color: #d0d0d0;
+            text-decoration: underline;
+            font-size: 10px;
+        }
+
+        #bCrumbs a:hover {
+            color: #d0d0d0;
+            text-decoration: none;
+        }
+
+        .breadcrumbBlue {
+            color: #4084b6;
+            font-size: 10px;
+        }
+
+        .breadcrumbSelected {
+            font-size: 10px;
+            color: #777777;
+        }
+
+        .breadcrumbContainer {
+            height: 25px;
+            margin-left: 5px;
+            color: #777777;
+        }
+
+        #altContent {
+            background-color: #CCCCCC;
+            height: 100%;
+            padding: 8px 0 0 0;
+        }
+
+        .accessible-anchors {
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #adspace {
+            margin-top: 0;
+        }
+
+        .column1 {
+            width: 450px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="body">
+
+
+        <div id="printButton">
+            <br /><br />
+            <div style="width:100%;text-align:center;">
+                <a href="#" onclick="javascript:window.print();">Print this page</a>
+            </div>
+        </div>
+        <h1 align="center">The Fall of Jericho</H1><BR>
+        <font size="4" face="Courier New">
+            <center>
+                <table border="0" cellpadding="0" cellspacing="18" width="200">
+                    <TR>
+                        <TD>X</TD>
+                        <TD>C</TD>
+                        <TD>I</TD>
+                        <TD>Q</TD>
+                        <TD>R</TD>
+                        <TD>P</TD>
+                        <TD>V</TD>
+                        <TD>T</TD>
+                        <TD>L</TD>
+                        <TD>S</TD>
+                        <TD>Q</TD>
+                        <TD>G</TD>
+                        <TD>C</TD>
+                        <TD>X</TD>
+                        <TD>J</TD>
+                    </TR>
+                    <TR>
+                        <TD>C</TD>
+                        <TD>O</TD>
+                        <TD>M</TD>
+                        <TD>M</TD>
+                        <TD>A</TD>
+                        <TD>N</TD>
+                        <TD>D</TD>
+                        <TD>E</TD>
+                        <TD>R</TD>
+                        <TD>A</TD>
+                        <TD>P</TD>
+                        <TD>Y</TD>
+                        <TD>E</TD>
+                        <TD>G</TD>
+                        <TD>E</TD>
+                    </TR>
+                    <TR>
+                        <TD>R</TD>
+                        <TD>V</TD>
+                        <TD>V</TD>
+                        <TD>I</TD>
+                        <TD>O</TD>
+                        <TD>S</TD>
+                        <TD>B</TD>
+                        <TD>V</TD>
+                        <TD>T</TD>
+                        <TD>U</TD>
+                        <TD>G</TD>
+                        <TD>I</TD>
+                        <TD>H</TD>
+                        <TD>F</TD>
+                        <TD>R</TD>
+                    </TR>
+                    <TR>
+                        <TD>T</TD>
+                        <TD>C</TD>
+                        <TD>F</TD>
+                        <TD>Z</TD>
+                        <TD>W</TD>
+                        <TD>C</TD>
+                        <TD>E</TD>
+                        <TD>X</TD>
+                        <TD>K</TD>
+                        <TD>S</TD>
+                        <TD>M</TD>
+                        <TD>L</TD>
+                        <TD>E</TD>
+                        <TD>N</TD>
+                        <TD>I</TD>
+                    </TR>
+                    <TR>
+                        <TD>S</TD>
+                        <TD>K</TD>
+                        <TD>C</TD>
+                        <TD>O</TD>
+                        <TD>F</TD>
+                        <TD>D</TD>
+                        <TD>P</TD>
+                        <TD>P</TD>
+                        <TD>A</TD>
+                        <TD>U</TD>
+                        <TD>L</TD>
+                        <TD>P</TD>
+                        <TD>I</TD>
+                        <TD>S</TD>
+                        <TD>C</TD>
+                    </TR>
+                    <TR>
+                        <TD>H</TD>
+                        <TD>R</TD>
+                        <TD>R</TD>
+                        <TD>R</TD>
+                        <TD>C</TD>
+                        <TD>D</TD>
+                        <TD>V</TD>
+                        <TD>N</TD>
+                        <TD>A</TD>
+                        <TD>Q</TD>
+                        <TD>Z</TD>
+                        <TD>I</TD>
+                        <TD>E</TD>
+                        <TD>G</TD>
+                        <TD>H</TD>
+                    </TR>
+                    <TR>
+                        <TD>O</TD>
+                        <TD>D</TD>
+                        <TD>B</TD>
+                        <TD>T</TD>
+                        <TD>P</TD>
+                        <TD>B</TD>
+                        <TD>D</TD>
+                        <TD>Q</TD>
+                        <TD>U</TD>
+                        <TD>D</TD>
+                        <TD>G</TD>
+                        <TD>W</TD>
+                        <TD>D</TD>
+                        <TD>T</TD>
+                        <TD>O</TD>
+                    </TR>
+                    <TR>
+                        <TD>U</TD>
+                        <TD>G</TD>
+                        <TD>L</TD>
+                        <TD>W</TD>
+                        <TD>L</TD>
+                        <TD>A</TD>
+                        <TD>K</TD>
+                        <TD>B</TD>
+                        <TD>H</TD>
+                        <TD>A</TD>
+                        <TD>G</TD>
+                        <TD>P</TD>
+                        <TD>Y</TD>
+                        <TD>I</TD>
+                        <TD>S</TD>
+                    </TR>
+                    <TR>
+                        <TD>T</TD>
+                        <TD>R</TD>
+                        <TD>O</TD>
+                        <TD>Q</TD>
+                        <TD>L</TD>
+                        <TD>N</TD>
+                        <TD>U</TD>
+                        <TD>C</TD>
+                        <TD>S</TD>
+                        <TD>R</TD>
+                        <TD>A</TD>
+                        <TD>H</TD>
+                        <TD>A</TD>
+                        <TD>B</TD>
+                        <TD>E</TD>
+                    </TR>
+                    <TR>
+                        <TD>J</TD>
+                        <TD>F</TD>
+                        <TD>J</TD>
+                        <TD>S</TD>
+                        <TD>E</TD>
+                        <TD>Y</TD>
+                        <TD>I</TD>
+                        <TD>L</TD>
+                        <TD>O</TD>
+                        <TD>E</TD>
+                        <TD>Y</TD>
+                        <TD>I</TD>
+                        <TD>Y</TD>
+                        <TD>R</TD>
+                        <TD>T</TD>
+                    </TR>
+                    <TR>
+                        <TD>G</TD>
+                        <TD>H</TD>
+                        <TD>J</TD>
+                        <TD>V</TD>
+                        <TD>W</TD>
+                        <TD>M</TD>
+                        <TD>F</TD>
+                        <TD>H</TD>
+                        <TD>J</TD>
+                        <TD>I</TD>
+                        <TD>S</TD>
+                        <TD>V</TD>
+                        <TD>J</TD>
+                        <TD>K</TD>
+                        <TD>X</TD>
+                    </TR>
+                    <TR>
+                        <TD>E</TD>
+                        <TD>A</TD>
+                        <TD>E</TD>
+                        <TD>V</TD>
+                        <TD>S</TD>
+                        <TD>Q</TD>
+                        <TD>D</TD>
+                        <TD>B</TD>
+                        <TD>R</TD>
+                        <TD>G</TD>
+                        <TD>D</TD>
+                        <TD>T</TD>
+                        <TD>L</TD>
+                        <TD>P</TD>
+                        <TD>M</TD>
+                    </TR>
+                    <TR>
+                        <TD>V</TD>
+                        <TD>S</TD>
+                        <TD>G</TD>
+                        <TD>L</TD>
+                        <TD>E</TD>
+                        <TD>G</TD>
+                        <TD>U</TD>
+                        <TD>L</TD>
+                        <TD>Q</TD>
+                        <TD>S</TD>
+                        <TD>C</TD>
+                        <TD>Z</TD>
+                        <TD>B</TD>
+                        <TD>U</TD>
+                        <TD>X</TD>
+                    </TR>
+                    <TR>
+                        <TD>S</TD>
+                        <TD>T</TD>
+                        <TD>S</TD>
+                        <TD>E</TD>
+                        <TD>I</TD>
+                        <TD>R</TD>
+                        <TD>P</TD>
+                        <TD>K</TD>
+                        <TD>O</TD>
+                        <TD>G</TD>
+                        <TD>C</TD>
+                        <TD>O</TD>
+                        <TD>Y</TD>
+                        <TD>Q</TD>
+                        <TD>O</TD>
+                    </TR>
+                    <TR>
+                        <TD>M</TD>
+                        <TD>O</TD>
+                        <TD>Z</TD>
+                        <TD>C</TD>
+                        <TD>F</TD>
+                        <TD>M</TD>
+                        <TD>F</TD>
+                        <TD>U</TD>
+                        <TD>E</TD>
+                        <TD>U</TD>
+                        <TD>A</TD>
+                        <TD>L</TD>
+                        <TD>M</TD>
+                        <TD>J</TD>
+                        <TD>W</TD>
+                    </TR>
+                </TABLE>
+            </center>
+        </FONT><BR>
+        <div align="center">
+            <center>
+                <table border="0" width="100%">
+                    <tr>
+                    <tr>
+                        <td>COMMANDER</td>
+                        <td>GILGAL</td>
+                        <td>JERICHO</td>
+                    </tr>
+                    <tr>
+                        <td>JOSHUA</td>
+                        <td>PRIESTS</td>
+                        <td>RAHAB</td>
+                    </tr>
+                    <tr>
+                        <td>SANDALS</td>
+                        <td>SEVEN</td>
+                        <td>SHOUT</td>
+                    </tr>
+                    <tr>
+                        <td>SPIES</td>
+                        <td>SWORD</td>
+                        <td>TRUMPETS</td>
+                    </tr>
+                </table>
+            </center>
+        </div><br /><br />
+        <font id="wordsMessage" size="1" face="Arial"><em>12 of 12 words were placed into the puzzle.</em></font>
+        <div align="center">
+            <div style="font-size:16px; font-weight:bold; margin-bottom:15px; text-decoration:italic;">
+                Created by <a href="/">Puzzlemaker</a> at DiscoveryEducation.com
+                <!--, sponsorship by Scotch. -->
+            </div>
+
+
+
+
+
+
+            <!-- begin footer -->
+        </div>
+        <div class="clear"></div>
+        </div>
+        <script type="text/javascript" language="javascript" src="/js/view.js"></script>
+        <script type="text/javascript" language="javascript">
+            setupHeader();
+        </script>
+
+    </body>
+
+</html>
+<!-- end footer -->
